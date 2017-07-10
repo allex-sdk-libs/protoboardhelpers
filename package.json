@@ -1,0 +1,29 @@
+{
+  "name": "allex_protoboardhelperssdklib",
+  "version": "1.0.0",
+  "description": "AllexJS sdk lib for protoboard management",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allex-sdk-libs/protoboardhelpers.git"
+  },
+  "dependencies": {
+    "allex_nodehelpersserverruntimelib": "1.x"
+  },
+  "keywords": [
+    "ecosystem:AllexJS",
+    "sdk",
+    "lib",
+    "protoboard",
+    "helpers"
+  ],
+  "author": "Andrija Petrovic <andrija.hers@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allex-sdk-libs/protoboardhelpers/issues"
+  },
+  "homepage": "https://github.com/allex-sdk-libs/protoboardhelpers#readme"
+}
