@@ -1,9 +1,9 @@
-var Filters = require('./arryfilters'),
-  Path = require('path');
+var Filters = require('./arryfilters');
 
 function createWebAppHelpers (Lib, Node) {
   'use strict';
-  var Fs = Node.Fs;
+  var Fs = Node.Fs,
+    Path = Node.Path;
 
   function checkIsWebApp (root, name) {
     try {

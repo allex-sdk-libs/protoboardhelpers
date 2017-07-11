@@ -4,7 +4,7 @@ function createComponentHelpers (Lib, Node) {
   var AllexQ = Lib.qlib,
     Q = Lib.q;
 
-  function createbuildpromisses (path) {
+  function createbuildpromises (path) {
     return Node.executeCommand.bind(Node, 'allex-component-build', null, {cwd: path});
   }
 
@@ -33,7 +33,7 @@ function createComponentHelpers (Lib, Node) {
     }else if (!Lib.isArray(path)) {
       throw new Error ('Input arg must be a string or array ..');
     }
-    AllexQ.chainPromises(path.map(createbuildpromisses)).done(analyzePromises.bind(null,d, path));
+    AllexQ.chainPromises(path.map(createbuildpromises)).done(analyzePromises.bind(null,d, path));
     return d.promise;
   }
 
